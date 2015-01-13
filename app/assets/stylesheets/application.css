@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+body {
+	font-family: Open Sans;
+	font-weight: 300;
+	text-align: center;
+	background: url(http://www.ydesigngraphics.com/images/PABOI%20Shirt_Orange.png);
+	background-size: contain;
+}
+section#hoots {
+	width: 750px;
+	height: 100%;
+	margin: 0 auto;
+}
+.hoot {
+	height: 180px;
+	width: 500px;
+	border: 2px solid cornsilk;
+	background-color: rgba(255,255,255,.8);
+	margin: 10px auto;
+}
+
+button, input, textarea {
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	border-radius: 20px;
+	border: 2px solid cornsilk;
+}
+button.edit {
+	background-color: mediumseagreen;
+	color: cornsilk;
+}
+button.delete {
+	color: white;
+	background-color: indianred;
+}
+p.author {
+	color: indianred;
+	font-size: 18px;
+}
+
+p.content {
+	color: cornflowerblue;
+	font-weight: 400;
+}
+.hoot-form {
+	width: 300px;
+	margin: 0 auto;
+}

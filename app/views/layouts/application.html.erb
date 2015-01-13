@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HootsApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<section id='new-hoot'>
+		<div class='hoot-form'>
+			<input type="text" name='author' placeholder='author'><br>
+			<textarea name='content' placeholder='add some content'></textarea><br>
+			<button class='add'>Hoot It</button>
+		</div>
+	</section>
+	<section id='hoots'></section>
+</body>
+</html>
